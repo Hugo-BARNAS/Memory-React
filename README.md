@@ -14,7 +14,7 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Contact](#contact)
-* [Website](#website)
+
 
 ## General info
 Tutorial for beginner 
