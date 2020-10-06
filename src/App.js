@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import shuffle from 'lodash.shuffle'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+
+import Card from './Card'
+import GuessCount from './GuessCount'
+import Hall0Fame, { FAKE_HOF } from './HallOfFame'
+
+const SIDE = 6
+const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓🍐🍟🍿'
+
+class App extends Component {
+  cards = this.generateCards()
+
+  generateCards() {
+    // soit résult un tableau vide
+    const result = []
+    // soit la taille égal à  36 cartes 
+    const size = SIDE * SIDE
+    // on initialise le jeu en le melangeant
+    const candidates = shuffle(SYMBOLS)
+    // tant que la taille du tableau est inférieur à 36 alors on 
+    while (result.length < size) {
+      // on initialise une constante qui le dernier élément de la liste des symboles
+      const card = candidates.pop()
+      // et on push les symboles deux fois dans le tableau
+      result.push(card, card)
+    }
+    // et on retourne le tableau dont le contenu sort de façon aléatoire
+    return shuffle(result)
+  }
+
+  handleCardClick(card) {
+    console.log(card, 'clicked')
+  }
+
+  render() {
+    const won = new Date().getSeconds() % 2 === 0
+    return (
+      <div className="memory">
+        <GuessCount guesses={0} />
+        {this.cards.map((card, index) => (
+          <Card
+            card={card}
+            feedback="visible"
+            key={index}
+            onClick={this.handleCardClick}
+          />
+        ))}
+        {won && <Hall0Fame entries={FAKE_HOF} />}
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
