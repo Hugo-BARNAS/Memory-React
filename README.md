@@ -1,6 +1,6 @@
  
 # Project Name : Memory-React
-> Make a project of game : Memory from the React framework
+> Memory game with React.js
 
 ## Table of contents
 * [Screenshots](#screenshots)
@@ -8,10 +8,6 @@
 * [Contact](#contact)
 * [Website](#website)
 
-
-## Screenshots
-# Project Name : rest-countries-API
-> This website will show you a lot of information about many countries.
 
 ## Table of contents
 * [General info](#general-info)
@@ -21,52 +17,20 @@
 * [Website](#website)
 
 ## General info
-My teacher ask me to use rescontries API using ajax request.
-So i made this project.
-After chosing a country in the list all the information of the country will dynamicly change.
+Tutorial for beginner 
 
 ## Screenshots
 
-
-
-## Technologies
-* HTML
-* CSS
-* JavaScript
-* restcountries API
-* Ajax
-* Json
-
-
-
-## What i learn, pratice: 
-<ul>
- <li>XMLHttpRequest()
- <li>Handle the answer of the server
- <li>Get
- <li>JSON
-</ul>
- 
- 
-## Status
-Project is:  _finished_
-
-
-## Contact
-Created by Alexandre Rodriguez
-revolalex@gmail.com
-
-
-## Website
-link: https://my-countries-api.netlify.app
-
-
+![Capture d’écran 2020-10-06 à 18 25 41](https://user-images.githubusercontent.com/57058997/95230971-dc112500-0802-11eb-9c9a-5129dc28e3f0.png)
 
 ## Technologies
 * HTML
 * CSS
 * JavaScript
-* React
+* React.js
+* Node.js
+
+
 
 
 ## What i learn, pratice: 
@@ -81,9 +45,19 @@ Project is:  _V1_
 
 
 ## Contact
-Hugo BARNAS
+Created by Hugo BARNAS
 hugo.barnas@gmail.com
 
 
 ## Website
 link: https://my-countries-api.netlify.app
+
+
+## Status
+Project is:  _V1_
+
+
+## Contact
+Hugo BARNAS
+hugo.barnas@gmail.com
+
