@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/React-lightgrey?logo=React&color=blue)
+ 
  
 # Project Name : Memory-React
 > Memory game with React.js
